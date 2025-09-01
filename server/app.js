@@ -25,8 +25,6 @@ app.use(express.urlencoded(
     }
 ));
 
-app.use('/api/auth', authRouter)
-
 app.use((req, res, next) => {
     res.status(400).json({
         error: 'Not found'
