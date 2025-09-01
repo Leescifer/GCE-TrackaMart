@@ -20,7 +20,8 @@ CREATE TABLE product (
     product_name VARCHAR(100) NOT NULL,
     net_weight VARCHAR(55),
     expiry_date DATE,
-    price NUMERIC(10,2),    description TEXT,
+    price NUMERIC(10,2),   
+    description TEXT,
     status BOOLEAN DEFAULT true,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     category_id INT REFERENCES category(category_id)
